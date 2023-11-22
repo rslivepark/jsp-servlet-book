@@ -4,14 +4,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>서블릿</title>
-<script type="text/javascript" src="param.js"></script>
+<title>5. 텍스트 박스에 입력된 값 얻어오기</title>
+<script type="text/javascript" src="param.js" defer></script>
 </head>
 <body>
-<form method="get" action="ParamServlet" name="frm">
-아이디 : <input type="text" name="id"><br>
-나이 : <input type="text" name="age"><br>
-<input type="submit" value="전송" onclick="return check()">
+<form action="ParamServlet" method="post" name="frm">
+아이디 : <input type="text" name="id" placeholder="아이디 입력"> 
+나이 : <input type="text" name="age" placeholder="나이 입력">
+ <input type="submit" value="전송" onclick="return check()">
+
+
 </form>
 </body>
 </html>
